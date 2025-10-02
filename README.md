@@ -32,8 +32,7 @@ This project uses a physical activity dataset from the `PMData` collection and a
 * `MPA`: Moderate Physical Activity (in minutes)
 * `VPA`: Vigorous Physical Activity (in minutes)
 
-The dataset file (`PMData_features_vector.csv`) is included in this repository.
-The dataset file (`MOX2_5_data_labelled.csv`) is included in this repository.
+The dataset file (`PMData_features_vector.csv`) and (`MOX2_5_data_labelled.csv`) are included in this repository.
 
 ---
 
