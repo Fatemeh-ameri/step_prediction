@@ -67,7 +67,7 @@ Implementation and evaluation of classification models including ROCKET, MiniRoc
 4/  
 Time-series forecasting experiments for daily step prediction using deep learning models such as LSTM, GRU, Bidirectional LSTM/GRU, stacked architectures, and a 1D CNN.
 
-ploting/  
+plotting/  
 Visualization and exploratory analysis of the datasets including feature distributions, activity level distributions, and participant-level analysis.
 
 ---
