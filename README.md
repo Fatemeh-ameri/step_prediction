@@ -70,6 +70,53 @@ Time-series forecasting experiments for daily step prediction using deep learnin
 ploting/  
 Visualization and exploratory analysis of the datasets including feature distributions, activity level distributions, and participant-level analysis.
 
+---
+
+## Results
+
+### Classification Results
+
+The classification experiments were evaluated using confusion matrices for the following models:
+
+- ROCKET  
+- MiniRocket  
+- MiniRocketVoting  
+- Multi-Layer Perceptron (MLP)
+
+Generated confusion matrices and training plots for both the **PMData** and **MOX** datasets are included in the repository.
+
+---
+
+### Step Prediction Results
+
+The following table summarizes the forecasting performance of different deep learning models for daily step prediction.
+
+#### PMData Dataset
+
+| Model | RMSE | MAE | RSD | ET |
+|------|------|------|------|------|
+| CNN-1D | 1164 | 230 | 11656 | 1288 |
+| Bidirectional GRU | 4468 | 3359 | 4470 | 1372 |
+| Vanilla LSTM | 4633 | 3419 | 4636 | 1412 |
+| Stacked LSTM | 4662 | 3461 | 4664 | 3219 |
+| Stacked GRU | 4788 | 3546 | 4791 | 3706 |
+| Vanilla GRU | 4815 | 3583 | 4818 | 1253 |
+| Bidirectional LSTM | 5006 | 3776 | 5009 | 2252 |
+
+#### MOX Dataset
+
+| Model | RMSE | MAE | RSD | ET |
+|------|------|------|------|------|
+| CNN-1D | 1510 | 413 | 1513 | 108 |
+| Stacked GRU | 4767 | 3534 | 4778 | 376 |
+| Stacked LSTM | 4798 | 3569 | 4809 | 414 |
+| Vanilla GRU | 4836 | 3578 | 4847 | 179 |
+| Bidirectional LSTM | 4851 | 3585 | 4862 | 349 |
+| Bidirectional GRU | 4865 | 3589 | 4867 | 310 |
+| Vanilla LSTM | 4881 | 3619 | 4893 | 190 |
+
+Lower values of RMSE and MAE indicate better prediction performance.
+
 ## Requirements
 
 Python 3 is required.
