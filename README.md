@@ -139,9 +139,9 @@ Main libraries used include:
 
 This project was developed as part of my thesis work and includes implementation and experimentation based on methods described in the following research paper:
 
-**An automatic and personalized
+**[An automatic and personalized
 recommendation modelling
 in activity eCoaching with deep
-learning and ontology**
+learning and ontology](https://www.nature.com/articles/s41598-023-37233-7)**
 
 The repository focuses on implementing parts of the data processing and modeling pipeline and experimenting with several machine learning models for activity classification and step prediction.
