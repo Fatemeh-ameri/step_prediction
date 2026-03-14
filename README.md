@@ -52,18 +52,23 @@ Processed datasets used in the experiments are included in this repository.
 
 ## Repository Structure
 
-The repository contains several experiment folders created during the development process.
+0/  
+Data preprocessing for the PMData dataset. Raw Fitbit activity and sleep data are aggregated at the daily level and saved as a processed dataset.
 
-0/
-1/
-2/
-3/
-4/
-ploting/
+1/  
+Label generation for the classification task. Activity labels are created based on step counts and activity intensity features.
 
-Each numbered folder contains experiment notebooks and generated datasets used during different stages of the experiments and modeling process.
+2/  
+Exploratory data analysis and feature analysis including correlation analysis, class distribution visualization, feature selection, PCA, and feature importance analysis.
 
----
+3/  
+Implementation and evaluation of classification models including ROCKET, MiniRocket, MiniRocketVoting, and MLP. Results include confusion matrices and training performance plots.
+
+4/  
+Time-series forecasting experiments for daily step prediction using deep learning models such as LSTM, GRU, Bidirectional LSTM/GRU, stacked architectures, and a 1D CNN.
+
+ploting/  
+Visualization and exploratory analysis of the datasets including feature distributions, activity level distributions, and participant-level analysis.
 
 ## Requirements
 
