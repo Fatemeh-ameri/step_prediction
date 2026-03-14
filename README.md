@@ -1,41 +1,95 @@
-# Comparing Classification and Prediction Models
+# Physical Activity Classification and Step Prediction
 
-The project compares different machine learning models for two main tasks: classification and time series prediction.
-
----
-
-## 📋 About The Project
-
-1.  **Classification:** I use several common classifiers and a Multi-Layer Perceptron (MLP) neural network to classify physical activity levels.
-2.  **Prediction:** I use common forecasting models and a 1D Convolutional Neural Network (CNN-1D) to predict future daily steps.
+This repository contains part of the implementation developed during my thesis work.
+The project focuses on implementing and experimenting with several machine learning and deep learning models for **physical activity classification** and **daily step prediction**.
 
 ---
 
-## 🛠️ Models Implemented
+## Project Overview
 
-### Classification Models
-* Common classifiers like **Rocket**, **MiniRocket** and **MiniRocketVoting** for time series classification.
-* A **Multi-Layer Perceptron (MLP)** neural network built with Keras/TensorFlow.
+The project explores two related tasks using physical activity time-series data.
 
-### Prediction (Forecasting) Models
-* Common time series models like **Bidirectional LSTM / GRU**.
-* A **1D Convolutional Neural Network (1D-CNN)** for time series prediction.
+### 1. Physical Activity Classification
+
+Different time-series classification models are used to classify activity patterns.
+
+Implemented models include:
+
+* ROCKET
+* MiniRocket
+* MiniRocketVoting
+* Multi-Layer Perceptron (MLP)
+
+### 2. Daily Step Prediction
+
+Time-series forecasting models are used to predict future daily step counts.
+
+Implemented models include:
+
+* Bidirectional LSTM
+* GRU
+* 1D Convolutional Neural Network (CNN-1D)
 
 ---
 
-## 📊 Dataset
+## Dataset
 
-This project uses a physical activity dataset from the `PMData` collection and a private dataset called MOX2-5. The main features include:
-* `steps`: Daily step count
-* `sedentary`: Time spent being sedentary (in minutes)
-* `LPA`: Light Physical Activity (in minutes)
-* `MPA`: Moderate Physical Activity (in minutes)
-* `VPA`: Vigorous Physical Activity (in minutes)
+The experiments use physical activity datasets derived from the **PMData** and the **MOX2-5 dataset**.
 
-The dataset file (`PMData_features_vector.csv`) and (`MOX2_5_data_labelled.csv`) are included in this repository.
+Main features used in the experiments include:
+
+* `steps` — daily step count
+* `sedentary` — sedentary time (minutes)
+* `LPA` — light physical activity (minutes)
+* `MPA` — moderate physical activity (minutes)
+* `VPA` — vigorous physical activity (minutes)
+
+Additional sleep-related features such as sleep duration and sleep score are also used.
+
+Processed datasets used in the experiments are included in this repository.
 
 ---
 
-## 🚀 Getting Started
+## Repository Structure
 
-Make sure you have Python 3 installed. You will also need install whatever are in the requiremnt.text.
+The repository contains several experiment folders created during the development process.
+
+0/
+1/
+2/
+3/
+4/
+ploting/
+
+Each numbered folder contains experiment notebooks and generated datasets used during different stages of the experiments and modeling process.
+
+---
+
+## Requirements
+
+Python 3 is required.
+
+Install dependencies with:
+
+pip install -r requirements.txt
+
+Main libraries used include:
+
+* pandas
+* numpy
+* scikit-learn
+* tensorflow / keras
+* sktime
+
+---
+
+## Reference
+
+This project was developed as part of my thesis work and includes implementation and experimentation based on methods described in the following research paper:
+
+**An automatic and personalized
+recommendation modelling
+in activity eCoaching with deep
+learning and ontology**
+
+The repository focuses on implementing parts of the data processing and modeling pipeline and experimenting with several machine learning models for activity classification and step prediction.
